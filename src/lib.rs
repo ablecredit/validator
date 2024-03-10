@@ -1,9 +1,14 @@
 use thiserror::Error;
 pub mod cin;
-mod gstin;
-mod pan;
-mod udyam;
-mod utils;
+pub mod gstin;
+pub mod pan;
+pub mod udyam;
+pub mod utils;
+
+pub use cin::CinMeta;
+pub use gstin::GstinMeta;
+pub use pan::PanMeta;
+pub use udyam::UdyamMeta;
 
 #[derive(Error, Debug)]
 pub enum ValidationError {

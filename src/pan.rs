@@ -14,7 +14,7 @@ pub struct PanMeta {
 
 #[derive(Debug, Copy, Clone, EnumString, Serialize, Deserialize, Display, PartialEq, Eq)]
 pub enum HolderType {
-    #[strum(serialize = "A", to_string = "A")]
+    #[strum(serialize = "A")]
     AOP,
     #[strum(serialize = "B")]
     BOI,
